@@ -1,36 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Product preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+  </style>
+
+  <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
 
-  Preview
+  <main class="container">
+    <div class="card">
+      <img class="photo" src="./images/image-product-desktop.jpg" alt="Perfume Desktop Photo">
 
-  Gabrielle Essence Eau De Parfum
+      <div class="card-details">
+        <h2>
+          Perfume
+        </h2>
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+        <h1>
+          Gabrielle Essence Eau De Parfum
+        </h1>
 
-  $149.99
-  $169.99
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.
+        </p>
 
-  Add to Cart
-  
+        <div>
+          <span class="font-fraunces discounted">
+            $149.99
+          </span>
+
+          <span class="original">
+            $169.99
+          </span>
+        </div>
+
+        <button class="btn-cart">
+          <object type="image/svg+xml" data="./images/icon-cart.svg" class="logo">
+            Kiwi Logo
+            <!-- fallback image in CSS -->
+          </object>
+          Add to Cart
+        </button>
+      </div>
+
+    </div>
+  </main>
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Wai Chung</a>.
   </div>
 </body>
+
 </html>
